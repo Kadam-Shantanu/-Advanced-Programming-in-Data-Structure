@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------- Coded by SHANTANU KADAM-------------------------------------------------------------------------
+// ------------------------------------------ Purpose: Basic program to calculate a food check including the tax. ---------------------------------------------------
+// -----------------------------------------------------------------Date completed: 02/16/2023-----------------------------------------------------------------------
+// package lab01;
+
+import java.util.Scanner;
+
+public class <FILE NAME> {
+    public static void main(String[] args) {
+        // Scanner attached to keyboard
+        Scanner cin = new Scanner(System.in);
+
+        // variables1
+        double burger = 0, fries = 0, drink = 0;    // -------------------------------------------------------------------------------------------------- input data
+        double tax, totalFood, totalDue;            // ----------------------------------------------------------------------------------------- calculated constant
+        final double TAX_RATE = 0.075; // Montgomery County // ---------------------------------- dialog with user (Add more interaction for fries and drink prices)
+        System.out.print("Enter Burger price: ");
+        burger = cin.nextDouble();
+        System.out.print("Enter Fries price: ");
+        fries = cin.nextDouble();
+        System.out.print("Enter Drink price: ");
+        drink = cin.nextDouble(); // ------------------------------------------------------------------------------------------processing (correct these assignments)
+        totalFood = burger + fries + drink;
+        tax = (7.5*totalFood)/100;
+        totalDue = totalFood + tax;
+        System.out.println();   // ------------------------------------------------------------------------------------------------ separate output from user dialog
+        // ----------------------------------------------------------------------------------- output results (add print/println to show all food prices, tax, total
+        // ----------------------------------------------------------------------------------------------------------------- before tax and total due including tax)
+        System.out.print("Burger: ");
+        System.out.println(burger);
+        System.out.print("Fries: ");
+        System.out.println(fries);
+        System.out.print("Drink: ");
+        System.out.println(drink);
+        System.out.print("Food Total: ");
+        System.out.println(totalFood);
+        System.out.print("Tax: ");
+        System.out.println(tax);
+        System.out.print("Total Due: $");
+        System.out.println(totalDue);
+        System.out.print("THANKS FOR SHOPPING WITH US");
+        System.out.print(" ---- SHANTANU'S MART");
+        
+                
+
+    } // ---------------------------------------------------------------------------------------------------------------------------------------------------End main
+    
+} // ------------------------------------------------------------------------------------------------------------------------------------------------------End class   
+
+
+
+
